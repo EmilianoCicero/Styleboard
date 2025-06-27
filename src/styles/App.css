@@ -1,8 +1,27 @@
-.app-container {
+.app-wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    font-family: 'DM Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .app-container {
+    margin-left: 320px; /* offset for fixed sidebar */
     padding: 2rem;
     background-color: #fff;
     color: #111;
-    min-height: 100vh;
+    flex: 1;
   }
   
   .app-title {
@@ -19,8 +38,4 @@
   
   .slider-block {
     margin-bottom: 1.5rem;
-  }
-  
-  .preview-text {
-    margin-top: 2rem;
   }

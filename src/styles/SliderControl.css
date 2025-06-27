@@ -10,5 +10,5 @@
   }
   
   .slider-control input[type="range"] {
-    width: 120px;
+    width: 100%;
   }
