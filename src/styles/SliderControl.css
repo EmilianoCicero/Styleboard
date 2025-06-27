@@ -1,0 +1,14 @@
+.slider-control {
+    margin-top: 1rem;
+  }
+  
+  .slider-control label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .slider-control input[type="range"] {
+    width: 120px;
+  }

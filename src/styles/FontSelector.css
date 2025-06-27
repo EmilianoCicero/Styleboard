@@ -1,0 +1,21 @@
+.font-selector {
+    margin-bottom: 1.5rem;
+  }
+  
+  .font-selector label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .font-selector select {
+    display: block;
+    width: 120px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+  }
