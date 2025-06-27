@@ -3,6 +3,7 @@ import FontSelector from './components/UI/FontSelector';
 import SliderControl from './components/UI/SliderControl';
 import { googleFonts } from './utils/googleFonts';
 import './styles/App.css';
+import Button from './components/UI/Button';
 
 const App = () => {
   const [font, setFont] = useState("Roboto");
@@ -84,18 +85,11 @@ const App = () => {
           lineHeight,
         }}
       >
-        <h1 style={{ fontSize: `${baseSizes.h1 * baseFontSize}px` }}>
-          This is a preview with <strong>{font}</strong>.
-        </h1>
-        <h2 style={{ fontSize: `${baseSizes.h2 * baseFontSize}px` }}>
-          Subtitle example
-        </h2>
-        <p style={{ fontSize: `${baseSizes.p * baseFontSize}px` }}>
-          This paragraph text scales based on the base font size slider.
-        </p>
-        <small style={{ fontSize: `${baseSizes.small * baseFontSize}px` }}>
-          Small text example.
-        </small>
+        <h1 style={{ fontSize: `${baseSizes.h1 * baseFontSize}px` }}>{font}</h1>
+        <p style={{ fontSize: `${baseSizes.p * baseFontSize}px` }}>This paragraph text scales based on the base font size slider.</p>
+        <Button action="Click Me" />
+        <h2 style={{ fontSize: `${baseSizes.h2 * baseFontSize}px` }}>Subtitle example</h2>
+        <small style={{ fontSize: `${baseSizes.small * baseFontSize}px` }}>Small text example.</small>
       </div>
     </div>
   );
